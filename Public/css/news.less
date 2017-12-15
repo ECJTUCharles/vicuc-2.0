@@ -1,0 +1,232 @@
+ul{
+    list-style: none;
+}
+
+
+body{
+    font-family: "微软雅黑";
+}
+
+#nav_ul{
+    li{
+        width: 129px;
+    }
+}
+//此处为共同样式
+.s-nav{
+    background-color: #fff;
+    margin-bottom: 0;
+    position: fixed;
+    z-index: 13;
+    width: 100%;
+    #s-nav{
+        padding-top: 15px;
+    }
+    .container-fluid{
+        height: 69px;
+    }
+    .navbar-brand{
+        padding: 0 15px;
+    }
+    li{
+        width: 100px;
+        a{
+            text-align: center;
+            padding: 15px 20px;
+            transition: all 2s;
+            // font-weight: 700;
+        }
+    }
+    li:nth-child(5){
+        width: 112px;
+    }
+    li:nth-child(6){
+        width: 133px;
+    }
+    .dropdown-menu{
+        min-width: 100px;
+    }
+}
+div.showAll{
+    margin-top:40%;
+    background-color:#fff;
+    z-index:9;
+    position:relative;
+    .main{
+        margin-top:75px;
+        width:60%;
+        padding-bottom:80px;
+        .s-h1{
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            font-family: "Microsoft Yahei";
+        }
+        .s-info{
+            white-space: nowrap;
+            color: #686666;
+            margin-bottom: 0px;
+            line-height: 27px;
+        }
+     // 新闻数据展示列表   
+        ul.list{
+            list-style:none;
+            li{
+                background-color: #fff;
+                margin-top: 10px;
+                padding: 15px 0;
+                transition:padding-left 0.5s;
+                border-bottom:1px solid #ccc;
+                display:flex;
+                align-items:center;
+                div.col-md-4{
+                    padding: 0;
+                    img{
+                        width: 100%;
+                    }
+                }
+                div.col-md-6{
+                    display:flex;
+                    flex-direction:column;
+                    align-content:center;
+                    align-content:center;
+                    span.news-title{
+                        font-size:16px;
+                        line-height:180%;
+                        color:#000;
+                    }
+                    span.date{
+                        font-size:10px;
+                        color:#222;
+                    }
+                    p{
+                        padding-top:12px;
+                        font-size:12px;
+                        width: 90%;
+                        a{
+                            padding: 0;
+                            line-height: 180%;
+                            text-decoration:none;
+                            color:#222;
+                        }
+                    }
+                }
+                div.arrow-r{
+                    height: 100%;
+                    display:flex;
+                    align-items:center;
+                    i.con1{
+                    font-size:20px;
+                    color:#fff;
+                    }
+                }
+            }
+            li.active,li:hover{
+                background-color:#E92E26;
+                opacity:0.9;
+                padding-left:15px;
+                div.col-md-6{
+                    span.news-title{
+                        color:#fff;
+                    }
+                    span.date{
+                        color:#fff;
+                    }
+                    p{
+                        a{
+                                color:#fff;
+                                text-decoration:none;
+                        }
+                    }
+                }
+            }
+        }
+        //页码区域
+        ul.page{
+            width: 150px;
+            overflow:hidden;
+            padding-top:80px;
+            li{
+                float:left;
+                padding:5.5px 11.5px;
+                text-align:center;
+                border:1px solid #ccc;
+                margin-right: 2px;
+                a{
+                    color:#222;
+                    text-decoration:none;
+                }
+            }
+            li.active,li:hover{
+                background-color:#E92E26;
+                a{
+                    color:#fff;
+                }
+            }
+        }
+    }
+}
+// 媒体查询
+@media screen and (max-width:960px) {
+     div.showAll{
+           margin-top:0%;
+          .main{
+            font-family: "微软雅黑";
+            width: 100%;
+            ul.list{
+                padding: 0;
+                li{
+                    width: 100%;
+                    span.news-title{
+                        font-size:20px;
+                        font-weight:bold;
+                    }
+                    div.xs-date{
+                            color:#aaa;
+                            line-height: 200%;
+                        }
+                }
+                li.active,li:hover{
+                    padding-left:0;
+                    background-color: #fff;
+                    cursor:pointer;
+                    div.xs-news{
+                        span.news-title{
+                            color:#FC0002;
+                        }
+                        p{
+                            a{
+                                color:#333;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+     }
+}
+
+
+
+//引入的字体
+@font-face {
+    font-family: "iconfont";
+    src: url('iconfont.ttf') format('truetype');
+    /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-jiantou:before {
+    content: "\e72d";
+    font-size: 28px;
+    color: #fff;
+}
+
+

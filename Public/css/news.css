@@ -1,0 +1,214 @@
+ul {
+  list-style: none;
+}
+body {
+  font-family: "微软雅黑";
+}
+#nav_ul li {
+  width: 129px;
+}
+.s-nav {
+  background-color: #fff;
+  margin-bottom: 0;
+  position: fixed;
+  z-index: 13;
+  width: 100%;
+}
+.s-nav #s-nav {
+  padding-top: 15px;
+}
+.s-nav .container-fluid {
+  height: 69px;
+}
+.s-nav .navbar-brand {
+  padding: 0 15px;
+}
+.s-nav li {
+  width: 100px;
+}
+.s-nav li a {
+  text-align: center;
+  padding: 15px 20px;
+  transition: all 2s;
+}
+.s-nav li:nth-child(5) {
+  width: 112px;
+}
+.s-nav li:nth-child(6) {
+  width: 133px;
+}
+.s-nav .dropdown-menu {
+  min-width: 100px;
+}
+div.showAll {
+  margin-top: 40%;
+  background-color: #fff;
+  z-index: 9;
+  position: relative;
+}
+div.showAll .main {
+  margin-top: 75px;
+  width: 60%;
+  padding-bottom: 80px;
+}
+div.showAll .main .s-h1 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  font-family: "Microsoft Yahei";
+}
+div.showAll .main .s-info {
+  white-space: nowrap;
+  color: #686666;
+  margin-bottom: 0px;
+  line-height: 27px;
+}
+div.showAll .main ul.list {
+  list-style: none;
+}
+div.showAll .main ul.list li {
+  background-color: #fff;
+  margin-top: 10px;
+  padding: 15px 0;
+  transition: padding-left 0.5s;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+}
+div.showAll .main ul.list li div.col-md-4 {
+  padding: 0;
+}
+div.showAll .main ul.list li div.col-md-4 img {
+  width: 100%;
+}
+div.showAll .main ul.list li div.col-md-6 {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+div.showAll .main ul.list li div.col-md-6 span.news-title {
+  font-size: 16px;
+  line-height: 180%;
+  color: #000;
+}
+div.showAll .main ul.list li div.col-md-6 span.date {
+  font-size: 10px;
+  color: #222;
+}
+div.showAll .main ul.list li div.col-md-6 p {
+  padding-top: 12px;
+  font-size: 12px;
+  width: 90%;
+}
+div.showAll .main ul.list li div.col-md-6 p a {
+  padding: 0;
+  line-height: 180%;
+  text-decoration: none;
+  color: #222;
+}
+div.showAll .main ul.list li div.arrow-r {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+div.showAll .main ul.list li div.arrow-r i.con1 {
+  font-size: 20px;
+  color: #fff;
+}
+div.showAll .main ul.list li.active,
+div.showAll .main ul.list li:hover {
+  background-color: #E92E26;
+  opacity: 0.9;
+  padding-left: 15px;
+}
+div.showAll .main ul.list li.active div.col-md-6 span.news-title,
+div.showAll .main ul.list li:hover div.col-md-6 span.news-title {
+  color: #fff;
+}
+div.showAll .main ul.list li.active div.col-md-6 span.date,
+div.showAll .main ul.list li:hover div.col-md-6 span.date {
+  color: #fff;
+}
+div.showAll .main ul.list li.active div.col-md-6 p a,
+div.showAll .main ul.list li:hover div.col-md-6 p a {
+  color: #fff;
+  text-decoration: none;
+}
+div.showAll .main ul.page {
+  width: 150px;
+  overflow: hidden;
+  padding-top: 80px;
+}
+div.showAll .main ul.page li {
+  float: left;
+  padding: 5.5px 11.5px;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin-right: 2px;
+}
+div.showAll .main ul.page li a {
+  color: #222;
+  text-decoration: none;
+}
+div.showAll .main ul.page li.active,
+div.showAll .main ul.page li:hover {
+  background-color: #E92E26;
+}
+div.showAll .main ul.page li.active a,
+div.showAll .main ul.page li:hover a {
+  color: #fff;
+}
+@media screen and (max-width: 960px) {
+  div.showAll {
+    margin-top: 0%;
+  }
+  div.showAll .main {
+    font-family: "微软雅黑";
+    width: 100%;
+  }
+  div.showAll .main ul.list {
+    padding: 0;
+  }
+  div.showAll .main ul.list li {
+    width: 100%;
+  }
+  div.showAll .main ul.list li span.news-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  div.showAll .main ul.list li div.xs-date {
+    color: #aaa;
+    line-height: 200%;
+  }
+  div.showAll .main ul.list li.active,
+  div.showAll .main ul.list li:hover {
+    padding-left: 0;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  div.showAll .main ul.list li.active div.xs-news span.news-title,
+  div.showAll .main ul.list li:hover div.xs-news span.news-title {
+    color: #FC0002;
+  }
+  div.showAll .main ul.list li.active div.xs-news p a,
+  div.showAll .main ul.list li:hover div.xs-news p a {
+    color: #333;
+  }
+}
+@font-face {
+  font-family: "iconfont";
+  src: url('iconfont.ttf') format('truetype');
+  /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-jiantou:before {
+  content: "\e72d";
+  font-size: 28px;
+  color: #fff;
+}

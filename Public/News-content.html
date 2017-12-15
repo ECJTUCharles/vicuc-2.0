@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>News content</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/News content.css">
+    <script src="./js/jquery-3.2.1.js"></script>
+    <script src="./js/about.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default s-nav" style="background-color:#fff;border-radius:0;">
+        <div class="container-fluid" style="height:69px;">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" style="padding:0 15px;">
+                    <img src="./img/logo.gif" alt="" class="logo">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav" id="s-nav">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li id="li_core" class="dropdown" style="position:relative;">
+                        <a href="core.html">CORE<span class="caret"></span></a>
+
+                    </li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="case.html">CASE</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="news-content">
+        <div class="News-content-news phone animation">
+            <h1>汪峰谈求婚章子怡：很神圣 肯定要盛大宣布</h1>
+            <span>2015-12-07</span>
+            <p>设计思想：
+                <br>项目在原有院落空间基础上，没有对建筑本身做任何修饰，而是回收传统民宅使用的手工烧制青砖，作为主要空间构成元素。 将原来室内外若干高低不平的地面全部统一标高，形成一个现代的水平界面，打破了传统院落等级形制的框架，为艺术品的展陈提供与之和谐的平台，形成了建筑与艺术之间积极的对话。
+            </p>
+        </div>
+        <div class="line  phone"></div>
+        <div class="News-content-news-2  ">
+            <img src="./img/News-content-img.png" class="animation" alt="">
+
+            <p class="animation">朱小地认为过度设计将导致形式的泛滥，要成就直抵人心的作品，首先必须要感动自己，而非建筑师的技巧操纵。他将观念艺术思维与现场空间建构有机结合，极大 地拓展建筑创作的可能性。并通过体量、光影、材料及色彩的综合运用和准确诠释，创造基于历史记忆的现代场所，引发真实空间与心灵空间的对话，使观者获得全 新的认知体验。朱小地认为过度设计将导致形式的泛滥，要成就直抵人心的作品，首先必须要感动自己，而非建筑师的技巧操纵。他将观念艺术思维与现场空间建构有机结合，极大 地拓展建筑创作的可能性。并通过体量、光影、材料及色彩的综合运用和准确诠释，创造基于历史记忆的现代场所，引发真实空间与心灵空间的对话，使观者获得全新的认知体验。
+            </p>
+        </div>
+        <div class="News-choose">
+            <div>
+                <a href="">&lt 上一篇</a>
+                <a href="">
+                    <img src="./img/new-content-three.png" alt="">
+                    <img src="./img/new-content-three-2.png" alt=""> 回列表
+                </a>
+                <a href="">下一篇 ></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        (function() {
+            $('.link a').hover(function() {
+                $(this).children('span').show();
+            }, function() {
+                $('.link a span').hide();
+            });
+
+            $('.News-content-news').fadeIn(2000);
+            $('.news-content').fadeIn(2000);
+
+            var img_w = $('.News-content-news').outerHeight() + $('.s-nav').outerHeight() + $('.News-content-news').outerHeight() - $(window).height();
+            var img_h = $('.News-content-news-2 img').height();
+            $('.img_white').css({
+                "height": img_h + 2,
+            });
+
+            if (($('.animation').offset().top - $(window).scrollTop()) < window.innerHeight) {
+                $('.animation').fadeIn(2000);
+                $('.News-content-news-2 p').hide();
+            }
+            $(window).scroll(function(event) {
+                $('.animation').each(function() {
+                    if (($(this).offset().top - $(window).scrollTop()) < window.innerHeight) {
+                        $(this).fadeIn(2000);
+                    }
+                });
+            });
+        })()
+    </script>
+</body>
+
+</html>

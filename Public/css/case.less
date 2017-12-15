@@ -1,0 +1,151 @@
+ul{
+    list-style: none;
+}
+
+
+body{
+    font-family: "微软雅黑";
+}
+
+#nav_ul{
+    li{
+        width: 129px;
+    }
+}
+//此处为共同样式
+.s-nav{
+    background-color: #fff;
+    margin-bottom: 0;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    #s-nav{
+        padding-top: 15px;
+    }
+    .container-fluid{
+        height: 69px;
+    }
+    .navbar-brand{
+        padding: 0 15px;
+    }
+    li{
+        width: 100px;
+        a{
+            text-align: center;
+            padding: 15px 20px;
+            transition: all 2s;
+            // font-weight: 700;
+        }
+    }
+    li:nth-child(5){
+        width: 112px;
+    }
+    li:nth-child(6){
+        width: 133px;
+    }
+    .dropdown-menu{
+        min-width: 100px;
+    }
+}
+.animation2{
+    animation-name: animation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+@keyframes animation {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+} 
+@media screen and (min-width: 1200px){
+    .phone{
+        display: none;
+    }
+    .container {
+        width: 60%;
+        h2{
+            font-size: 24px;
+        }
+        img{
+            width: 100%;
+            transition: all 1.5s;
+        }
+        p{
+            font-size: 12px;
+            line-height: 2;
+        }
+        .line{
+            width: 3.5%;
+            height: 2px;
+            background-color: #918f8f;
+        }
+        .toL:hover img{
+            transform: scale(1.05);
+        }
+    }
+   
+    .News-choose{
+        width: 100%;
+        height: 65px;
+        margin-top: 3%;
+        border: 1px solid #F3F3F3;
+        div{
+            width: 55%;
+            height: 65px;
+            margin:0 auto;
+             a{
+                color: #6E6D6D;
+                line-height: 65px;
+                padding:0 25px;
+                font-size: 14px;
+                display: block;
+                height: 65px;
+                float: left;
+                position: relative;
+                &:hover{
+                    text-decoration: none;
+                }
+                img{
+                    position: absolute;
+                    top: 30px;
+                    left: 20px;
+    
+                }
+                img:nth-child(2){
+                    display: block;
+                }
+                img:nth-child(1){
+                    display: none;
+                }
+            }
+            a:nth-child(2){
+                border-right: 1px solid #F5F5F5;
+                border-left: 1px solid #F5F5F5;
+                padding-left: 40px;
+            }
+            a:hover{
+                color: red;
+                img:nth-child(1){
+                    display: block;
+                }
+                img:nth-child(2){
+                    display: none;
+                }
+            }
+        }
+       margin-bottom:200px;
+    }
+    
+    
+}
+@media screen and (max-width: 768px){
+    .pc{
+        display: none;
+    }
+    
+}

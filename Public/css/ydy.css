@@ -1,0 +1,139 @@
+html,
+body,
+div,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+.noticelist {
+    width: 1000px;
+    white-space: nowrap;
+    overflow: hidden; 
+    margin: 20px auto;
+    padding: 0px 10px;
+    height: 94px;
+    position: relative;
+}
+.noticelist ul {
+    zoom: 1;
+    *zoom: 1;
+    position: absolute;
+     /* top: 115px;  */
+     /* transition: top 2s;  */
+     animation: 10s slideToOn forwards infinite;
+}
+    @keyframes slideToOn {
+    0%{
+        transform: translateY(152px);
+        opacity: 0;
+    } 
+     10%{
+        transform: translateY(0px);
+        opacity: 1;
+    } 
+    33%{
+        transform: translateY(0px);
+    } 
+    43%{
+        transform: translateY(-152px);
+    }
+    66%{
+        transform: translateY(-152px);
+    } 
+    76%{
+        transform: translateY(-304px);
+    }
+    90%{
+        transform: translateY(-304px);
+    } 
+    100%{
+         transform: translateY(-456px); 
+    }
+}
+.noticelist ul:after {
+    content: " ";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+.noticelist li {
+    float: left;
+    width: 100%;
+    line-height: 95px;
+     /* display: inline; */
+  /* -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;  */
+}
+
+
+.noticelist > ul > li >span {
+    display: block;
+    text-align: center;
+    font-size: 6em;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    line-height: 85px;
+    font-weight: 700;
+    color:white;
+    font-family: "Microsoft YaHei";
+   
+}
+.fance{
+    width: 360px;
+    border:1px solid white;
+    margin: 30px auto; 
+    padding: 0px 15px;
+    height: 40px;
+}
+.fance>span{
+    display: block;
+    line-height: 40px;
+    text-align: center; 
+    font-size: 0.7em;
+    font-weight: 700;
+    color:white;
+    letter-spacing: 8px;
+    font-family: "Microsoft YaHei";
+}
+.enter>span{
+    display: block;
+    width: 150px;
+    margin: 120px auto;
+    padding: 0px 10px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 700;
+    color:white;
+    letter-spacing: 8px;
+    font-family: "Microsoft YaHei";
+}
+
+/* .animation1{
+    animation-name: animation1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes animation1 {
+  
+    0% {
+        opacity: 0;
+        display: none;
+    }
+    
+    30% {
+        opacity: 0;
+        display: none;
+    }
+   
+    100% {
+        opacity: 1;
+       display: block;
+    
+    }
+} */

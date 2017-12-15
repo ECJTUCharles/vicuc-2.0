@@ -1,0 +1,136 @@
+.s-nav {
+  background-color: #fff;
+  margin-bottom: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+}
+.s-nav #s-nav {
+  padding-top: 15px;
+}
+.s-nav .container-fluid {
+  height: 69px;
+}
+.s-nav .navbar-brand {
+  padding: 0 15px;
+}
+.s-nav li {
+  width: 100px;
+}
+.s-nav li a {
+  text-align: center;
+  padding: 15px 20px;
+  transition: all 2s;
+}
+.s-nav li:nth-child(5) {
+  width: 112px;
+}
+.s-nav li:nth-child(6) {
+  width: 133px;
+}
+.s-nav .dropdown-menu {
+  min-width: 100px;
+}
+.News-content-news {
+  width: 55%;
+  margin: 0 auto;
+  padding-top: 145px;
+  font-family: "微软雅黑";
+}
+.News-content-news h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #212121;
+}
+.News-content-news span {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  font-size: 12px;
+  margin-bottom: 90px;
+}
+.News-content-news p {
+  font-size: 14px;
+}
+.News-content-news p:nth-child(1) {
+  padding-bottom: 20px;
+}
+.line {
+  background: url(../img/new-content-line.gif) no-repeat center center;
+  margin: 0 auto;
+  width: 55%;
+  height: 30px;
+}
+.News-content-news-2 {
+  width: 55%;
+  margin: 0 auto;
+}
+.News-content-news-2 img {
+  width: 92%;
+  margin-bottom: 40px;
+}
+.News-content-news-2 p {
+  margin-bottom: 55px;
+}
+p {
+  color: #686868;
+  line-height: 150%;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  color: red;
+}
+a:hover {
+  color: red;
+}
+.News-choose {
+  width: 100%;
+  height: 65px;
+  border: 1px solid #F5F5F5;
+  margin-bottom: 200px;
+}
+.News-choose div {
+  width: 55%;
+  height: 65px;
+  margin: 0 auto;
+}
+.News-choose div a {
+  color: #6E6D6D;
+  line-height: 65px;
+  padding: 0 25px;
+  font-size: 14px;
+  display: block;
+  height: 65px;
+  float: left;
+}
+.News-choose div a img {
+  margin-right: 8px;
+}
+.News-choose div a:nth-child(2) {
+  border-right: 1px solid #F5F5F5;
+  border-left: 1px solid #F5F5F5;
+}
+@media screen and (max-width: 940px) {
+  .News-content-news-2 img,
+  .News-content-news-2 p {
+    display: none;
+  }
+  .phone {
+    width: 94%;
+    display: none;
+  }
+  .News-choose div {
+    display: none;
+  }
+  .News-content-news {
+    padding-top: 100px;
+  }
+  .News-content-news span {
+    margin-bottom: 80px;
+  }
+}

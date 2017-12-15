@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <title>联系我们</title>
+    <script src="./js/jquery-3.2.1.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/contact.js"></script>
+</head>
+<script>
+    $(function() {
+        if ($(window).width() <= 768) {
+            $('.logo').attr('src', './img/logo_2.gif');
+        } else {
+            $('.logo').attr('src', './img/logo.gif');
+        }
+        /*调整窗口自动调整宽度*/
+        $(window).resize(function() {
+            if ($(window).width() <= 768) {
+                $('.logo').attr('src', './img/logo_2.gif');
+            } else {
+                $('.logo').attr('src', './img/logo.gif');
+            }
+        });
+    });
+</script>
+
+<body>
+    <nav class="navbar navbar-default s-nav" style="background-color:#fff;border-radius:0;">
+        <div class="container-fluid" style="height:69px;">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="border-color:#fff;margin-top: 18px;">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar" style="background-color:red;"></span>
+                    <span class="icon-bar" style="background-color:red;"></span>
+                    <span class="icon-bar" style="background-color:red;"></span>
+                </button>
+                <a class="navbar-brand" href="#" style="padding:0 15px;">
+                    <img src="./img/logo.gif" alt="" class="logo">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav" id="s-nav" style="background-color:#fff;">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li id="li_core" class="dropdown" style="position:relative;">
+                        <a href="core.html">CORE<span class="caret"></span></a>
+
+                    </li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="case.html">CASE</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <div class="container-fluid" style="padding:0;">
+        <img src="./img/banner.png" alt="" style="width:100%;position:fixed;top:71px;">
+    </div>
+    <div class="container-fluid" style="margin-top:60%;background-color:#fff;z-index:9;position:relative;">
+        <div class="container">
+            <div class="text" style="padding-top:130px;">
+                <ul class="name ">
+                    <li class="col-md-12" style="font-size:18px;font-weight:bold;">北京中科亿达科技有限公司</li>
+                </ul>
+                <ul class="show">
+                    <li class="col-md-6 col-sm-12 col-xs-12">电话:010-52868021</li>
+                    <li class="col-md-6 col-sm-12 col-xs-12">手机:13581810738</li>
+                    <li class="col-md-6 col-sm-12 col-xs-12">邮编:100000</li>
+                    <li class="col-md-6 col-sm-12 col-xs-12">电子邮箱: tao@vicuc.com</li>
+                    <li class="col-md-6 col-sm-12 col-xs-12">地址:北京市石景山区京原路19 号景阳写字楼1206</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid hidden-xs" style="padding-top:150px;background-color:#fff;z-index:9;position:relative;">
+        <div class="container inputt ">
+            <input type="text" placeholder="姓名" class="col-md-3 col-sm-12 col-xs-12">
+            <input type="text" placeholder="邮编" class="col-md-3 col-sm-12 col-xs-12">
+            <input type="text" placeholder="电话" class="col-md-3 col-sm-12 col-xs-12">
+            <input type="text" placeholder="内容" class="col-md-11 last col-sm-12 col-xs-12">
+
+        </div>
+        <div class="container">
+            <div class="submit center-block">提交</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,376 @@
+html,
+body,
+div,
+ul,
+li,
+a,
+nav,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft YaHei";
+}
+body {
+  overflow: hidden;
+}
+nav {
+  position: fixed;
+  top: 7.5%;
+  right: 4%;
+  z-index: 9;
+  width: 44%;
+}
+nav #logoPic {
+  position: fixed;
+  top: 6%;
+  left: 5%;
+}
+nav > ul {
+  position: relative;
+  width: 100%;
+  list-style: none;
+}
+nav > ul > li {
+  position: relative;
+  display: inline-block;
+  width: 15%;
+  height: 24px;
+}
+nav > ul > li:nth-child(5),
+nav > ul > li:nth-child(6) {
+  width: 17%;
+}
+nav > ul > li > a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 24px;
+  line-height: 24px;
+  color: red;
+  text-align: center;
+}
+nav > ul > li > a span {
+  display: block;
+  width: 100%;
+  position: absolute;
+  transition: opacity 0.1s;
+}
+nav > ul > li > a span.en {
+  font-size: 14px;
+  opacity: 1;
+}
+nav > ul > li > a span.cn {
+  font-size: 16px;
+  opacity: 0;
+}
+nav > ul > li .dropDown {
+  position: absolute;
+  top: 105%;
+  left: 5%;
+  display: none;
+  width: 90%;
+  padding: 5px 0;
+  list-style: none;
+  transition: display 0.1s;
+  background-color: transparent;
+  -webkit-box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+nav > ul > li .dropDown > li {
+  margin-top: 3px;
+  width: 100%;
+  height: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+nav > ul > li .dropDown > li > a {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: red;
+}
+nav > ul > li .dropDown > li > a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.main #screens {
+  transition: all 0.8s cubic-bezier(0.9, 0, 1, 1);
+}
+.main #screens > li {
+  overflow: hidden;
+  position: relative;
+  list-style: none;
+}
+.main #screens > li#aboutUs > div > img {
+  width: 100%;
+}
+.main #screens > li#aboutUs :nth-child(4) {
+  position: absolute;
+  top: 23%;
+  left: 19%;
+  width: 4%;
+  height: 40%;
+  opacity: 0;
+}
+.main #screens > li#aboutUs :nth-child(5) {
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  width: 37%;
+  height: 41%;
+  opacity: 0;
+}
+.main #screens > li#aboutUs :nth-child(6) {
+  position: absolute;
+  top: 70%;
+  left: 15%;
+  width: 25%;
+  height: 8%;
+}
+.main #screens > li#genuine > div > img {
+  width: 100%;
+}
+.main #screens > li#genuine :nth-child(4) {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  width: 6.5%;
+}
+.main #screens > li#genuine :nth-child(5) {
+  position: absolute;
+  top: 32%;
+  left: 38%;
+  width: 22%;
+}
+.main #screens > li#genuine :nth-child(6) {
+  position: absolute;
+  top: 25%;
+  left: 73%;
+  background: transparent;
+  font-size: 25px;
+  color: #fff;
+}
+.main #screens > li#idea > div > img {
+  width: 100%;
+}
+.main #screens > li#idea :nth-child(4) {
+  position: absolute;
+  top: 26%;
+  left: 32%;
+  width: 10%;
+}
+.main #screens > li#idea :nth-child(5) {
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  width: 22%;
+}
+.main #screens > li#idea :nth-child(6) {
+  position: absolute;
+  top: 5%;
+  left: 58%;
+  width: 17%;
+}
+.main #screens > li#tech > div > img {
+  width: 100%;
+}
+.main #screens > li#tech :nth-child(4) {
+  position: absolute;
+  top: 37%;
+  left: 35%;
+  width: 6%;
+}
+.main #screens > li#tech :nth-child(5) {
+  position: absolute;
+  top: 20%;
+  left: 46%;
+  width: 18%;
+}
+.main #screens > li#sell > div > img {
+  width: 100%;
+}
+.main #screens > li#sell :nth-child(4) {
+  position: absolute;
+  top: 27%;
+  left: 34%;
+  width: 9%;
+}
+.main #screens > li#sell :nth-child(5) {
+  position: absolute;
+  top: 46%;
+  left: 36%;
+  width: 15.5%;
+}
+.main #screens > li#sell :nth-child(6) {
+  position: absolute;
+  top: 25%;
+  left: 56%;
+  width: 6%;
+}
+.main #screens > li#sell :nth-child(7) {
+  position: absolute;
+  top: 38%;
+  left: 53%;
+  width: 10%;
+}
+.main #screens > li#case #bg6_1 {
+  width: 30%;
+}
+.main #screens > li#case #bg6_1 :nth-child(2) {
+  left: 50%;
+  width: 26%;
+}
+.main #screens > li#case #bg6_2 {
+  width: 20%;
+}
+.main #screens > li#case #bg6_2 :nth-child(2) {
+  left: 30%;
+  width: 38%;
+}
+.main #screens > li#case #bg6_3 {
+  width: 20%;
+}
+.main #screens > li#case #bg6_3 :nth-child(2) {
+  left: 30%;
+  width: 38%;
+}
+.main #screens > li#case #bg6_4 {
+  width: 30%;
+}
+.main #screens > li#case #bg6_4 :nth-child(2) {
+  left: 24%;
+  width: 25%;
+}
+.main #screens > li#case > div > a {
+  overflow: hidden;
+  position: relative;
+}
+.main #screens > li#case > div > a :nth-child(2) {
+  position: absolute;
+  top: 34%;
+}
+.main #screens > li#case > div > a :nth-child(2) img {
+  width: 100%;
+}
+.main #screens > li#case > div > a > img {
+  transition: transform 0.3s;
+}
+.main #screens > li#case > div > a:hover > img {
+  transform: scale(1.2);
+}
+.main #screens > li#partners > dl {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+}
+.main #screens > li#partners > dl dt {
+  height: 25%;
+}
+.main #screens > li#partners > dl dt img {
+  height: 100%;
+}
+.main #screens > li#partners > dl dd {
+  width: 100%;
+  height: 75%;
+}
+.main #screens > li#partners > dl dd > ul {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+.main #screens > li#partners > dl dd > ul > li {
+  float: left;
+  margin-right: 2%;
+  width: 23%;
+  height: 33%;
+}
+.main #screens > li .bgPic {
+  display: block;
+  width: 100%;
+}
+.main #screens > li .bgPic a {
+  float: left;
+}
+.main #screens > li .bgPic a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.main #screens > li .derivatives {
+  position: absolute;
+  bottom: 13%;
+  left: 5%;
+  z-index: 2;
+  width: 0.8%;
+}
+.main #screens > li .derivatives img {
+  width: 100%;
+}
+.main #screens > li .num {
+  position: absolute;
+  top: 87%;
+  left: 19%;
+  z-index: 2;
+  font-size: 14px;
+  color: red;
+}
+.main #dots {
+  position: fixed;
+  top: 30%;
+  right: 5%;
+  width: 0.8%;
+  list-style: none;
+}
+.main #dots li {
+  overflow: hidden;
+  margin-top: 18px;
+  border: 1px solid red;
+  border-radius: 50%;
+  text-indent: -999em;
+  transition: transform 0.8s linear,opacity 0.4s linear;
+}
+.main #dots li.cur {
+  position: absolute;
+  border: 1px solid transparent;
+  background: red;
+}
+.main #btns {
+  position: fixed;
+  bottom: 13%;
+  right: 5%;
+  width: 4%;
+}
+.main #btns div {
+  position: absolute;
+  width: 30%;
+  transition: transform 0.1s;
+}
+.main #btns div:nth-child(1) {
+  left: 0;
+}
+.main #btns div:nth-child(2) {
+  right: 0;
+}
+.main #btns div:hover {
+  transform: scale(1.2);
+}
+.main #btns div img {
+  width: 100%;
+}
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
